@@ -1,0 +1,26 @@
+Step 1: Get the hardware
+
+Step 2: Install Raspbian OS on the Raspberry Pi
+Now we’ll install Raspbian (the Debian Linux OS tailored for Raspberry Pi) the easy way, then boot the OS and connect to Wi-Fi.
+
+Step 3: Update packages
+sudo apt-get update
+sudo apt-get upgrade
+dpkg -l > ~/Desktop/packages.list
+pip freeze > ~/Desktop/pip-freeze-initial.list
+
+Step 4: Install the Python basics
+sudo apt-get install build-essential python-dev pyt
+
+Step 5: Install pandas dependencies
+sudo apt-get install xsel xclip libxml2-dev libxslt-dev python-lxml python-h5py python-numexpr python-dateutil python-six python-tz python-bs4 python-html5lib python-openpyxl python-tables python-xlrd python-xlwt cython python-sqlalchemy python-xlsxwriter python-jinja2 python-boto python-gflags python-googleapi python-httplib2 python-zmq libspatialindex-dev
+sudo pip install bottleneck rtree
+
+Step 6: Install the scientific Python stack
+sudo apt-get install python-numpy python-matplotlib python-mpltoolkits.basemap python-scipy python-sklearn python-statsmodels python-pandas
+
+Step 7 (optional): Install other useful packages
+sudo apt-get install python-requests python-pil python-scrapy python-geopy python-shapely python-pyproj
+sudo pip install jupyter geopandas osmnx
+
+
