@@ -10,7 +10,7 @@ from time import sleep, strftime, time
 from datetime import time as tm
 from datetime import datetime, date, timedelta
 #	sudo apt install python3-picamera
-from picamera import PiCamera
+# from picamera import PiCamera
 from time import sleep
 arduino = serial.Serial('/dev/ttyACM0',9600)  
 arduino.setDTR(False)
